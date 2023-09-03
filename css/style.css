@@ -170,6 +170,22 @@ header .navbar .navbar-brand img {
 .weekly-update{}
 /* weekly update */
 
+
+/* play with watch */
+.play-with-watch h4{
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+.play-with-watch p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.play-with-watch{}
+.play-with-watch{}
+/* play with watch */
+
 /* client-review */
 .client-review{}
 .client-review {
