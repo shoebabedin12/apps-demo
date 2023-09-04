@@ -29,7 +29,7 @@ body {
   animation: goDown 0.5s ease-in-out forwards;
   background: #fff;
   -webkit-animation: goDown 0.5s ease-in-out forwards;
-  box-shadow: 0px 1px 15px -8px #000;
+  /* box-shadow: 0px 1px 15px -8px #000; */
 }
 @keyframes goDown {
   0% {
@@ -125,11 +125,12 @@ header .navbar .navbar-brand img {
   align-items: center;
   justify-content: space-between;
   margin: 20px auto;
-  background: rgb(13, 56, 72);
+  /* background: rgb(13, 56, 72); */
+  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
   max-width: 600px;
   border-radius: 20px;
   padding: 10px 3rem;
-  background: #0d3848;
+  /* background: #0d3848; */
   z-index: 3;
   position: relative;
 }
@@ -155,7 +156,7 @@ header .navbar .navbar-brand img {
 
 .hero .marquee-slider {
   min-height: 100%;
-  --space: 2rem;
+  --space: 1rem;
   display: grid;
   align-content: center;
   overflow: hidden;
@@ -249,6 +250,7 @@ header .navbar .navbar-brand img {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 /* animation */
 .app-store-download p {
@@ -261,14 +263,16 @@ header .navbar .navbar-brand img {
   font-size: 34px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 20px;
+  max-width: 600px;
+    margin: 0 auto 20px;
   text-align: center;
 }
 /* Style for the button container */
 .app-store-download .download-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #064054;
+  /* background-color: #064054; */
+  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -422,7 +426,7 @@ header .navbar .navbar-brand img {
 .weekly-update ul li {
   font-size: 14px;
   font-weight: 500;
-  color: #064054;
+  color: #fff;
   /* border: 1px solid #fff; */
   padding: 5px 10px;
   border-radius: 10px;
@@ -431,25 +435,11 @@ header .navbar .navbar-brand img {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  background: radial-gradient(
-        circle at 100% 100%,
-        #ffffff 0,
-        #ffffff 7px,
-        transparent 7px
-      )
-      0% 0%/8px 8px no-repeat,
-    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 7px, transparent 7px)
-      100% 0%/8px 8px no-repeat,
-    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 7px, transparent 7px)
-      0% 100%/8px 8px no-repeat,
-    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 7px, transparent 7px) 100%
-      100%/8px 8px no-repeat,
-    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
-      calc(100% - 16px) no-repeat,
-    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 16px)
-      calc(100% - 2px) no-repeat,
-    linear-gradient(90deg, #2dc6f2 0%, #064054 100%);
   box-sizing: border-box;
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, #2cbde6, #0d3848) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
 }
 
 /* weekly update */
