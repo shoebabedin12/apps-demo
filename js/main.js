@@ -193,4 +193,21 @@ particlesJS("particles-js", {
 });
 
 
+// video loaded detect
+const video = document.getElementById('myVideo');
+
+// Add an event listener to detect when the video has loaded
+video.addEventListener('loadedmetadata', function() {
+    console.log('Video metadata loaded. You can now play the video.');
+});
+
+// You can also add an event listener for other video events
+video.addEventListener('canplaythrough', function() {
+    console.log('Video can be played through without buffering.');
+});
+
+// Play the video when it's loaded (optional)
+video.addEventListener('loadeddata', function() {
+    video.play();
+});
 
