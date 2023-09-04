@@ -60,6 +60,7 @@ $(document).ready(function () {
 
 var galleryTop = new Swiper('.imageSlider', {
   spaceBetween: 10,
+  effect: 'fade',
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
