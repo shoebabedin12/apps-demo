@@ -158,7 +158,17 @@ header .navbar .navbar-brand img {
 /* app-store-download */
 .app-store-download {
   margin-bottom: 50px;
+  position: relative;
 }
+/* animation */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* animation */
 .app-store-download p {
   font-size: 19px;
   font-weight: 700;
