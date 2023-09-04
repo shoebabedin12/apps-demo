@@ -171,7 +171,7 @@ header .navbar .navbar-brand img {
   overflow: hidden;
   user-select: none;
   gap: var(--gap);
-  transform: skewY(-3deg);
+  /* transform: skewY(-3deg); */
 }
 
 .hero .marquee-slider .marquee__group {
