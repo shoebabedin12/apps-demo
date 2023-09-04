@@ -503,7 +503,8 @@ footer .navbar-brand img {
     font-size: 18px;
   }
   .app-store-download img {
-    object-fit: fill;
+    /* object-fit: fill; */
+    max-height: 400px;
   }
   .weekly-update h4 {
     font-size: 18px;
