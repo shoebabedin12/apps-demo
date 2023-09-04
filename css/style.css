@@ -255,12 +255,14 @@ header .navbar .navbar-brand img {
   font-size: 19px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
 }
 .app-store-download h2 {
   font-size: 34px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 20px;
+  text-align: center;
 }
 /* Style for the button container */
 .app-store-download .download-button {
@@ -273,6 +275,11 @@ header .navbar .navbar-brand img {
   transition: background-color 0.3s;
   font-size: 22px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 /* Style for the Font Awesome icon */
@@ -281,6 +288,7 @@ header .navbar .navbar-brand img {
 }
 
 .app-store-download .img {
+  max-width: 500px;
   max-height: 500px;
   overflow: hidden;
   border-radius: 15px;
@@ -288,7 +296,7 @@ header .navbar .navbar-brand img {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 .app-store-download .img img {
   max-height: 500px;
@@ -454,11 +462,13 @@ header .navbar .navbar-brand img {
   font-size: 28px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
 }
 .play-with-watch p {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
+  text-align: center;
 }
 .play-with-watch video {
   max-height: 500px;
