@@ -55,28 +55,6 @@ $(document).ready(function () {
   });
 
 
-
-  // var swiper = new Swiper(".imageSlider", {
-  //   loop: true,
-  //   spaceBetween: 10,
-  //   slidesPerView: 1,
-  //   freeMode: true,
-  //   watchSlidesProgress: true,
-  // });
-  // var swiper2 = new Swiper(".text", {
-  //   loop: true,
-  //   spaceBetween: 10,
-  //   slidesPerView: 1,
-  //   navigation: {
-      
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  //   thumbs: {
-  //     swiper: swiper,
-  //   },
-  // });
-
 })
 
 
