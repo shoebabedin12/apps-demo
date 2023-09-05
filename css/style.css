@@ -738,6 +738,12 @@ footer .navbar-brand img {
   }
   .client-review h2 {
     font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .client-review .swiper .swiper-wrapper .swiper-slide .img {
+    flex-direction: column;
+    gap: 0rem;
+    margin-bottom: 0px;
   }
   .client-review .swiper .swiper-wrapper .swiper-slide .title h4 {
     font-size: 18px;
