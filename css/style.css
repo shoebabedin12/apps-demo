@@ -793,8 +793,8 @@ header .navbar .navbar-brand img {
   z-index: 1;
   position: absolute;
   top: 0.6rem;
-  left: 0.8rem;
-  width: calc(100% - 2rem);
+  left: 0.7rem;
+  width: calc(100% - 2.2rem);
   height: calc(100% - 1rem);
 }
 .client-review
