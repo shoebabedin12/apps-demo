@@ -753,8 +753,8 @@ header .navbar .navbar-brand img {
 .client-review .swiper .swiper-wrapper .swiper-slide .img .marquee_group_item {
   position: relative;
   max-width: 244px;
-  max-height: 244px;
-  min-height: 244px;
+  max-height: 260px;
+  min-height: 260px;
   overflow: hidden;
   width: 100%;
   height: 100%;
