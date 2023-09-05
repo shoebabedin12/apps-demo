@@ -164,7 +164,9 @@ header .navbar .navbar-brand img {
   width: 100%;
 }
 .hero .marquee-slider .marquee {
-  width: 3260px;
+  /* width: 1260px; */
+  height: 28vh;
+  width: 2560px;
   margin: auto;
   --duration: 60s;
   --gap: var(--space);
