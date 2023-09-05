@@ -506,7 +506,74 @@ header .navbar .navbar-brand img {
   justify-content: space-around;
   margin-bottom: 30px;
 }
+/* .client-review .swiper .swiper-wrapper .swiper-slide .img .watch-frame {
+  position: relative;
+  border: 1px solid red;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-height: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  min-width: 300px;
+}
+.client-review
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .img
+  .watch-frame
+  .transparent-img {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.client-review
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .img
+  .watch-frame
+  .transparent-img
+  img {
+  width: 100%;
+  height: 100%;
+}
 
+.client-review
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .img
+  .watch-frame
+  .inner-frame-img {
+  z-index: 1;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.client-review
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .img
+  .watch-frame
+  .inner-frame-img
+  img {
+  width: 100%;
+  height: 100%;
+} */
+
+.client-review .swiper .swiper-wrapper .swiper-slide .img {
+}
+.client-review .swiper .swiper-wrapper .swiper-slide .img {
+}
+.client-review .swiper .swiper-wrapper .swiper-slide .img {
+}
 .client-review .swiper .swiper-wrapper .swiper-slide .title {
   display: flex;
   align-items: center;
