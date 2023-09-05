@@ -58,6 +58,11 @@ $(document).ready(function () {
 var galleryTop = new Swiper(".imageSlider", {
   spaceBetween: 10,
   // effect: 'fade',
+  autoplay: {
+    delay: 3000, // Set the delay between slides in milliseconds
+    disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+  },
+  speed: 5000,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -66,6 +71,7 @@ var galleryTop = new Swiper(".imageSlider", {
   loopedSlides: 4
 });
 var galleryThumbs = new Swiper(".text", {
+ 
   spaceBetween: 10,
   centeredSlides: true,
   slidesPerView: "auto",

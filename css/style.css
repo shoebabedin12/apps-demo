@@ -156,7 +156,7 @@ header .navbar .navbar-brand img {
 
 .hero .marquee-slider {
   min-height: 100%;
-  --space: 4rem;
+  --space: 1rem;
   display: grid;
   align-content: center;
   overflow: hidden;
@@ -164,7 +164,7 @@ header .navbar .navbar-brand img {
   width: 100%;
 }
 .hero .marquee-slider .marquee {
-  width: 1260px;
+  width: 3260px;
   margin: auto;
   --duration: 60s;
   --gap: var(--space);
@@ -541,6 +541,8 @@ header .navbar .navbar-brand img {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .client-review .swiper .swiper-wrapper .swiper-slide .img img {
   max-width: 400px;
