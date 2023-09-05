@@ -58,10 +58,10 @@ $(document).ready(function () {
 var galleryTop = new Swiper(".imageSlider", {
   spaceBetween: 10,
   // effect: 'fade',
-  autoplay: {
-    delay: 3000, // Set the delay between slides in milliseconds
-    disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
-  },
+  // autoplay: {
+  //   delay: 3000, 
+  //   disableOnInteraction: false 
+  // },
   speed: 5000,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -70,18 +70,7 @@ var galleryTop = new Swiper(".imageSlider", {
   loop: true,
   loopedSlides: 4
 });
-var galleryThumbs = new Swiper(".text", {
- 
-  spaceBetween: 10,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  touchRatio: 0.2,
-  slideToClickedSlide: true,
-  loop: true,
-  loopedSlides: 4
-});
-galleryTop.controller.control = galleryThumbs;
-galleryThumbs.controller.control = galleryTop;
+
 
 particlesJS("particles-js", {
   particles: {
