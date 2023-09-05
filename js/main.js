@@ -18,7 +18,7 @@ $(document).ready(function () {
   var swiper = new Swiper(".mySwiper", {
     // effect: "fade",
     autoplay: {
-      delay: 3000, // Set the delay between slides in milliseconds
+      delay: 300, // Set the delay between slides in milliseconds
       disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
     },
     loop: true, // Set to true for infinite loop
@@ -58,11 +58,11 @@ $(document).ready(function () {
 var galleryTop = new Swiper(".imageSlider", {
   spaceBetween: 10,
   // effect: 'fade',
-  // autoplay: {
-  //   delay: 3000, 
-  //   disableOnInteraction: false 
-  // },
-  speed: 5000,
+  autoplay: {
+    delay: 3000, 
+    disableOnInteraction: false 
+  },
+  speed: 1000,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -71,7 +71,8 @@ var galleryTop = new Swiper(".imageSlider", {
   loopedSlides: 4
 });
 
-
+// particle js
+document.addEventListener("DOMContentLoaded", function () {
 particlesJS("particles-js", {
   particles: {
     number: {
@@ -182,6 +183,7 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
+});
 
 // video loaded detect
 const video = document.getElementById("myVideo");
@@ -201,88 +203,7 @@ video.addEventListener("loadeddata", function () {
   video.play();
 });
 
-// canvas
-// var canvas = document.getElementById('myCanvas');
-// var innerCanvas = document.getElementsByClassName('innerCanvas');
-// var ctx = canvas.getContext('2d');
 
-// console.log(innerCanvas[0].currentSrc);
-// var img = new Image();
-
-// img.src = './../images/transparent_face_v2.png';
-
-// img.onload = function() {
-//   canvas.width = img.width;
-//   canvas.height = img.height;
-//   ctx.drawImage(img, 0, 0);
-// };
-// Get all the Swiper slides
-// Get all the canvas elements with class "myCanvas"
-var canvasList = document.querySelectorAll('.myCanvas');
-
-// Loop through each canvas element and handle it separately
-canvasList.forEach(function(canvas) {
-  var innerCanvas = canvas.nextElementSibling; // Get the sibling img element
-  var ctx = canvas.getContext('2d'); // Get the 2D rendering context of the canvas
-
-  // Create an image element for the frame
-  var frameImg = new Image();
-  frameImg.src = './../images/transparent_face_v2.png';
-
-  // Create an image element for the content image
-  var contentImg = new Image();
-  contentImg.src = innerCanvas.src;
-
-  // Wait for both images to load
-  Promise.all([loadImage(frameImg), loadImage(contentImg)])
-    .then(function(images) {
-      var frame = images[0];
-      var content = images[1];
-
-      // Set canvas size to match the frame image dimensions
-      canvas.width = frame.width;
-      canvas.height = frame.height;
-
-      // Calculate the position and size of the content image within the frame
-      var frameAspectRatio = frame.width / frame.height;
-      var contentAspectRatio = content.width / content.height;
-      var contentX = 0;
-      var contentY = 0;
-      var contentWidth = frame.width;
-      var contentHeight = frame.height;
-
-      if (frameAspectRatio < contentAspectRatio) {
-        // The content image is wider than the frame
-        contentHeight = frame.width / contentAspectRatio;
-        contentY = (frame.height - contentHeight) / 2;
-      } else {
-        // The content image is taller than the frame
-        contentWidth = frame.height * contentAspectRatio;
-        contentX = (frame.width - contentWidth) / 2;
-      }
-
-      // Draw the frame image
-      ctx.drawImage(frame, 0, 0, frame.width, frame.height);
-
-      // Draw the content image within the frame
-      ctx.drawImage(content, contentX, contentY, contentWidth, contentHeight);
-    })
-    .catch(function(error) {
-      console.error('Error loading images:', error);
-    });
-});
-
-// Helper function to load an image and return a promise
-function loadImage(img) {
-  return new Promise(function(resolve, reject) {
-    img.onload = function() {
-      resolve(img); // Resolve the promise when the image is loaded
-    };
-    img.onerror = function() {
-      reject(new Error('Image load error')); // Reject the promise if there's an error
-    };
-  });
-}
 
 
 
