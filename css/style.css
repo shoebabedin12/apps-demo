@@ -69,7 +69,8 @@ body {
   align-items: center;
   /* width: 100%;
   min-height: 100vh; */
-  background: #000;
+  /* background: #000; */
+  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
   overflow: hidden;
   position: absolute;
   top: 0;
