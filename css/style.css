@@ -427,10 +427,10 @@ header .navbar .navbar-brand img {
   -webkit-animation: marquee 70s linear infinite forwards;
   animation: marquee 70s linear infinite forwards;
 }
-.marquee-slider-part .marquee__content:hover {
+/* .marquee-slider-part .marquee__content:hover {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
-}
+} */
 
 .marquee-slider-part .list-inline {
   display: flex;
@@ -469,11 +469,11 @@ header .navbar .navbar-brand img {
     transform: translateX(-66.6%);
   }
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   .marquee-slider-part .marquee-slider .marquee__group {
     animation-play-state: paused;
   }
-}
+} */
 
 .marquee-slider-part .marquee-slider .marquee__group p {
   background-image: linear-gradient(
