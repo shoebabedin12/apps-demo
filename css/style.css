@@ -171,23 +171,23 @@ header .navbar .navbar-brand img {
   z-index: 3;
 }
 .hero .swiper .swiper-slide .swiper_slider_item:before {
-  /* background: linear-gradient(
+   background: linear-gradient(
     92.98deg,
-    rgba(9, 35, 45, 0.8) 2.13%,
-    rgba(17, 89, 109, 0.8) 97.63%
-  ); */
-  box-shadow: inset 0px 20px 20px 0px rgb(9 ,41 ,52 , 1);
+    rgb(10 45 56) 2.13%,
+    rgb(12 56 69) 97.63%
+  );
+  /* box-shadow: inset 0px 20px 20px 0px rgb(9 ,41 ,52 , 1); */
 }
 .hero .swiper .swiper-slide .swiper_slider_item:after {
   top: auto;
   bottom: 0;
-  box-shadow: inset 0px 20px 20px 0px rgb(9 ,41 ,52 , 1);
+  /* box-shadow: inset 0px 20px 20px 0px rgb(9 ,41 ,52 , 1); */
   rotate: 180deg;
-  /* background: linear-gradient(
+   background: linear-gradient(
     92.98deg,
-    rgba(9, 35, 45, 0.8) 2.13%,
-    rgba(17, 89, 109, 0.8) 97.63%
-  ); */
+    rgb(10 45 56) 2.13%,
+    rgb(12 56 69) 97.63%
+  ); 
 }
 
 .hero .swiper .swiper-slide .swiper_slider_item
@@ -490,14 +490,14 @@ header .navbar .navbar-brand img {
   position: relative;
 }
 /* animation */
-#particles-js {
+/* #particles-js {
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: -100;
   top:0;
   left:0;
-}
+} */
 /* animation */
 .app-store-download p {
   font-size: 19px;
@@ -823,7 +823,8 @@ header .navbar .navbar-brand img {
 .client-review .swiper .swiper-wrapper .swiper-slide .img .marquee_group_item {
   position: relative;
   max-width: 300px;
-  aspect-ratio: 1;
+  max-height: 350px;
+  min-height: 350px;
   overflow: hidden;
   width: 100%;
   height: 100%;
