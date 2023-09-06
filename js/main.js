@@ -16,7 +16,6 @@ $(document).ready(function () {
 
   // hero slider
   var swiper = new Swiper(".mySwiper", {
-    // effect: "fade",
     // autoplay: {
     //   delay: 300, 
     //   disableOnInteraction: false, 
@@ -57,7 +56,6 @@ $(document).ready(function () {
 
 var galleryTop = new Swiper(".imageSlider", {
   spaceBetween: 10,
-  // effect: 'fade',
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
