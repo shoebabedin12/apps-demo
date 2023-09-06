@@ -57,10 +57,10 @@ $(document).ready(function () {
 
 var galleryTop = new Swiper(".imageSlider", {
   spaceBetween: 10,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   speed: 1000,
   navigation: {
     nextEl: ".swiper-button-next",
