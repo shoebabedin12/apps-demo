@@ -16,6 +16,7 @@ $(document).ready(function () {
 
   // hero slider
   var swiper = new Swiper(".mySwiper", {
+    effect: "fade",
     autoplay: {
       delay: 300, 
       disableOnInteraction: false, 
