@@ -49,6 +49,10 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
+
+.garident-btn{
+  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
+}
 /* common */
 
 /* variable csss */
@@ -263,7 +267,7 @@ header .navbar .navbar-brand img {
   justify-content: space-between;
   margin: 20px auto;
   /* background: rgb(13, 56, 72); */
-  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
+  /* background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%); */
   max-width: 600px;
   border-radius: 20px;
   padding: 10px 3rem;
@@ -549,7 +553,7 @@ header .navbar .navbar-brand img {
   display: inline-block;
   padding: 10px 20px;
   /* background-color: #064054; */
-  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
+  /* background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%); */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -823,7 +827,7 @@ header .navbar .navbar-brand img {
   border-radius: 20px;
   padding: 10px 3rem;
   /* background: #0d3848; */
-  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
+  /* background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%); */
   /* margin-top: 80px; */
 }
 .client-review a i {
