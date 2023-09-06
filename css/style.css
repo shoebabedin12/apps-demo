@@ -1,5 +1,5 @@
 /* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 /* common */
 * {
@@ -19,6 +19,11 @@ li {
 body {
   font-family: var(--fontFamily);
   background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
+}
+p, h2, h3, h4{
+max-width: 558px;
+text-align: center;
+margin: 10px auto;
 }
 .main {
   background: linear-gradient(
@@ -51,7 +56,12 @@ body {
 }
 
 .garident-btn {
-  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
+  background-color: #064054;
+  text-shadow: 0px 4px 5px #000;
+  box-shadow: 0px 1px 13px 1px #15657b;
+  max-width: 400px !important;
+  border-radius: 40px !important;
+  /* background: linear-gradient(92.98deg, #0d3848 2.13%, #146379 97.63%); */
 }
 /* common */
 
@@ -61,7 +71,7 @@ body {
 
 /* variable csss */
 :root {
-  --fontFamily: "Roboto", sans-serif;
+  --fontFamily: "Montserrat", sans-serif;
   --color: #212529;
 }
 /* variable csss */
@@ -204,7 +214,7 @@ header .navbar .container-fluid {
 }
 header .navbar.sticky .navbar-brand {
   /* background-color: #0f607d; */
-  background:linear-gradient(92.98deg, #22a3c7 2.13%, #0d3848 97.63%);
+  background:linear-gradient(92.98deg, #146379 2.13%, #0d3848 97.63%);
 }
 header .navbar .navbar-brand {
   /* background-color: #064054; */
@@ -256,7 +266,7 @@ header .navbar .navbar-brand img {
 }
 
 .hero h2 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -380,9 +390,9 @@ header .navbar .navbar-brand img {
   position: relative;
 }
 .marquee-slider-part .marquee {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 100%;
-  height: 300px;
+  height: auto;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
@@ -421,7 +431,7 @@ header .navbar .navbar-brand img {
 
 .marquee-slider-part .marquee__content {
   width: 245rem !important;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,7 +530,7 @@ header .navbar .navbar-brand img {
 /* app-store-download */
 .app-store-download {
   padding-top: 12px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   position: relative;
   /* background: linear-gradient(
     92.98deg,
@@ -560,7 +570,7 @@ header .navbar .navbar-brand img {
   /* background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%); */
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 40px;
   transition: background-color 0.3s;
   font-size: 22px;
   font-weight: 700;
@@ -569,7 +579,10 @@ header .navbar .navbar-brand img {
   justify-content: center;
   max-width: 400px;
   margin: 0 auto;
+  text-shadow: 0px 4px 5px #000;
+  box-shadow: 0px 1px 13px 1px #15657b;
 }
+
 
 /* Style for the Font Awesome icon */
 .app-store-download .download-button i {
@@ -630,7 +643,7 @@ header .navbar .navbar-brand img {
 }
 .app-store-download .marquee-slider .marquee {
   /* width: 1260px; */
-  height: 17rem;
+  height: 10rem;
   width: 2560px;
   margin: auto;
   --duration: 60s;
@@ -646,7 +659,7 @@ header .navbar .navbar-brand img {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: var(--gap);
   min-width: 100%;
   animation: scroll var(--duration) linear infinite;
@@ -654,8 +667,8 @@ header .navbar .navbar-brand img {
 }
 .app-store-download .marquee-slider .marquee__group .marquee_group_item {
   position: relative;
-  max-width: 244px;
-  max-height: 260px;
+  max-width: 150px;
+    max-height: 160px;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -687,12 +700,12 @@ header .navbar .navbar-brand img {
   .marquee__group
   .marquee_group_item
   .watch_div {
-  z-index: 1;
-  position: absolute;
-  top: 0.6rem;
-  left: 0.7rem;
-  width: calc(100% - 2.2rem);
-  height: calc(100% - 1rem);
+    z-index: 1;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    width: calc(100% - 1.2rem);
+    height: calc(100% - 1rem);
 }
 .app-store-download
   .marquee-slider
@@ -702,7 +715,7 @@ header .navbar .navbar-brand img {
   .watch_wallpaper {
   width: 100%;
   height: 100%;
-  border-radius: 45px;
+  border-radius: 30px;
 }
 .app-store-download .marquee-slider .marquee--reverse .marquee__group {
   animation-direction: reverse;
@@ -716,7 +729,7 @@ header .navbar .navbar-brand img {
   flex-wrap: wrap;
   gap: 10px;
   /* background-color: #064054; */
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -773,7 +786,8 @@ header .navbar .navbar-brand img {
   flex-wrap: wrap;
   gap: 10px;
   /* background-color: #064054; */
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
+  padding-top: 16px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -787,7 +801,7 @@ header .navbar .navbar-brand img {
   /* border: 1px solid #fff; */
   padding: 5px 10px;
   border-radius: 10px;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -803,7 +817,7 @@ header .navbar .navbar-brand img {
 
 /* play with watch */
 .play-with-watch {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   /* background: linear-gradient(
     92.98deg,
     rgba(9, 35, 45, 0.8) 2.13%,
@@ -827,16 +841,22 @@ header .navbar .navbar-brand img {
 .play-with-watch video {
   max-height: 500px;
   width: 100%;
-  object-fit: contain;
-  padding-top: 50px;
+  /* object-fit: contain; */
+  padding-top: 10px;
 }
-
+.play-with-watch .overlay {
+  margin: -1rem auto 0;
+    max-width: 320px;
+}
+.play-with-watch .overlay img{
+  
+}
 /* play with watch */
 
 /* client-review */
 
 .client-review {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   /* background: linear-gradient(
     92.98deg,
     rgba(9, 35, 45, 0.8) 2.13%,
@@ -850,7 +870,7 @@ header .navbar .navbar-brand img {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .client-review a {
   font-size: 22px;
@@ -876,8 +896,11 @@ header .navbar .navbar-brand img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 8rem;
+  max-width: 558px;
+  margin: 0 auto;
+  gap: 1rem;
   margin-bottom: 30px;
+  flex-direction: column;
 }
 
 .client-review video {
@@ -887,14 +910,15 @@ header .navbar .navbar-brand img {
 
 .client-review .swiper .swiper-wrapper .swiper-slide .title {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .client-review .swiper .swiper-wrapper .swiper-slide .title h4 {
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
+  margin-left: 0;
 }
 .client-review .swiper .swiper-wrapper .swiper-slide .title ul {
   display: flex;
@@ -908,21 +932,23 @@ header .navbar .navbar-brand img {
   color: #fff;
 }
 .client-review .swiper .swiper-wrapper .swiper-slide p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #fff;
-  max-width: 800px;
-  margin: 0 auto;
+  font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 100%;
+    text-align: left;
+    margin-left: 0;
 }
 
 .client-review .swiper .swiper-wrapper .swiper-slide .img .marquee_group_item {
   position: relative;
-  max-width: 300px;
-  max-height: 340px;
-  min-height: 340px;
+  max-width: 280px;
+    max-height: 303px;
+    min-height: 303px;
   overflow: hidden;
   width: 100%;
   height: 100%;
+  margin-bottom: 16px;
 }
 .client-review
   .swiper
@@ -1139,6 +1165,7 @@ footer .navbar-brand img {
   .play-with-watch video {
     margin-bottom: 30px;
   }
+
   .play-with-watch h4 {
     font-size: 18px;
     text-align: center;
