@@ -1,14 +1,5 @@
 $(document).ready(function () {
-  // Preloader
-  setTimeout(function() {
-    $('#container').addClass('loaded');
-    // Once the container has finished, the scroll appears
-    if ($('#container').hasClass('loaded')) {
-      // It is so that once the container is gone, the entire preloader section is deleted
-      $('#preloader').delay(9000).queue(function() {
-        $(this).remove();
-      });}
-  }, 3000);
+;
   // sticky nav
   var btn = $(".navbar");
 
@@ -26,11 +17,10 @@ $(document).ready(function () {
 
   // hero slider
   var swiper = new Swiper(".mySwiper", {
-    effect: "fade",
-    autoplay: {
-      delay: 300, 
-      disableOnInteraction: false, 
-    },
+    // autoplay: {
+    //   delay: 300, 
+    //   disableOnInteraction: false, 
+    // },
     loop: true, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
 
