@@ -51,6 +51,124 @@ body {
 }
 /* variable csss */
 
+/* css animation */
+.glowing-animate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+ .glowing-animate .glowing {
+  position: relative;
+  min-width: 700px;
+  height: 550px;
+  margin: -150px;
+  transform-origin: right;
+  animation: colorChange 50s linear infinite;
+}
+
+ .glowing-animate .glowing:nth-child(even) {
+  transform-origin: left;
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.glowing-animate .glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+
+.glowing-animate .glowing span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 80px;
+  height: 80px;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.glowing-animate .glowing span:nth-child(3n + 1)::before {
+  background: rgba(134, 255, 0, 1);
+  box-shadow: 0 0 20px rgba(134, 255, 0, 1), 0 0 40px rgba(134, 255, 0, 1),
+    0 0 60px rgba(134, 255, 0, 1), 0 0 80px rgba(134, 255, 0, 1),
+    0 0 0 8px rgba(134, 255, 0, 0.1);
+}
+
+.glowing-animate .glowing span:nth-child(3n + 2)::before {
+  background: rgba(255, 214, 0, 1);
+  box-shadow: 0 0 20px rgba(255, 214, 0, 1), 0 0 40px rgba(255, 214, 0, 1),
+    0 0 60px rgba(255, 214, 0, 1), 0 0 80px rgba(255, 214, 0, 1),
+    0 0 0 8px rgba(255, 214, 0, 0.1);
+}
+
+.glowing-animate .glowing span:nth-child(3n + 3)::before {
+  background: rgba(0, 226, 255, 1);
+  box-shadow: 0 0 20px rgba(0, 226, 255, 1), 0 0 40px rgba(0, 226, 255, 1),
+    0 0 60px rgba(0, 226, 255, 1), 0 0 80px rgba(0, 226, 255, 1),
+    0 0 0 8px rgba(0, 226, 255, 0.1);
+}
+
+ .glowing-animate .glowing span:nth-child(3n + 1) {
+  animation: animate 10s alternate infinite;
+}
+
+.glowing-animate .glowing span:nth-child(3n + 2) {
+  animation: animate-reverse 30s alternate infinite;
+}
+
+.glowing-animate .glowing span:nth-child(3n + 3) {
+  animation: animate 80s alternate infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* css animation */
+
 /* header */
 header .navbar {
   padding: 0;
@@ -83,7 +201,6 @@ header .navbar .navbar-brand img {
 
 /* hero */
 .hero {
-  margin-bottom: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   background: linear-gradient(
@@ -222,133 +339,22 @@ header .navbar .navbar-brand img {
   height: 100%;
   border-radius: 45px;
 }
-/* .hero .swiper .swiper-slide img {
-  max-width: 240px;
-  width: 100%;
-  margin: 0 auto;
-} */
 
-/* css animation */
-.hero .glowing-animate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background: #000;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
 
-.hero .glowing-animate .glowing {
-  position: relative;
-  min-width: 700px;
-  height: 550px;
-  margin: -150px;
-  transform-origin: right;
-  animation: colorChange 50s linear infinite;
-}
 
-.hero .glowing-animate .glowing:nth-child(even) {
-  transform-origin: left;
-}
-
-@keyframes colorChange {
-  0% {
-    filter: hue-rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.hero .glowing-animate .glowing span {
-  position: absolute;
-  top: calc(80px * var(--i));
-  left: calc(80px * var(--i));
-  bottom: calc(80px * var(--i));
-  right: calc(80px * var(--i));
-}
-
-.hero .glowing-animate .glowing span::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -8px;
-  width: 80px;
-  height: 80px;
-  background: #f00;
-  border-radius: 50%;
-}
-
-.hero .glowing-animate .glowing span:nth-child(3n + 1)::before {
-  background: rgba(134, 255, 0, 1);
-  box-shadow: 0 0 20px rgba(134, 255, 0, 1), 0 0 40px rgba(134, 255, 0, 1),
-    0 0 60px rgba(134, 255, 0, 1), 0 0 80px rgba(134, 255, 0, 1),
-    0 0 0 8px rgba(134, 255, 0, 0.1);
-}
-
-.hero .glowing-animate .glowing span:nth-child(3n + 2)::before {
-  background: rgba(255, 214, 0, 1);
-  box-shadow: 0 0 20px rgba(255, 214, 0, 1), 0 0 40px rgba(255, 214, 0, 1),
-    0 0 60px rgba(255, 214, 0, 1), 0 0 80px rgba(255, 214, 0, 1),
-    0 0 0 8px rgba(255, 214, 0, 0.1);
-}
-
-.hero .glowing-animate .glowing span:nth-child(3n + 3)::before {
-  background: rgba(0, 226, 255, 1);
-  box-shadow: 0 0 20px rgba(0, 226, 255, 1), 0 0 40px rgba(0, 226, 255, 1),
-    0 0 60px rgba(0, 226, 255, 1), 0 0 80px rgba(0, 226, 255, 1),
-    0 0 0 8px rgba(0, 226, 255, 0.1);
-}
-
-.hero .glowing-animate .glowing span:nth-child(3n + 1) {
-  animation: animate 10s alternate infinite;
-}
-
-.hero .glowing-animate .glowing span:nth-child(3n + 2) {
-  animation: animate-reverse 30s alternate infinite;
-}
-
-.hero .glowing-animate .glowing span:nth-child(3n + 3) {
-  animation: animate 80s alternate infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-reverse {
-  0% {
-    transform: rotate(360deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-/* css animation */
 /* hero */
 
 
 /* marquee-slider-part */
+.marquee-slider-part{
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
+  overflow: hidden;
+  position: relative;
+}
 .marquee-slider-part .marquee {
   margin: 0 auto;
   width: 100%;
@@ -357,6 +363,11 @@ header .navbar .navbar-brand img {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
 }
 .marquee-slider-part .marquee:before,
 .marquee-slider-part .marquee:after {
@@ -484,7 +495,13 @@ header .navbar .navbar-brand img {
 
 /* app-store-download */
 .app-store-download {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
   position: relative;
 }
 /* animation */
@@ -671,6 +688,13 @@ header .navbar .navbar-brand img {
 
 /* weekly update */
 .weekly-update {
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
+  overflow: hidden;
+  position: relative;
   /* margin-bottom: 50px; */
 }
 .weekly-update h4 {
@@ -721,7 +745,14 @@ header .navbar .navbar-brand img {
 
 /* play with watch */
 .play-with-watch {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
+  overflow: hidden;
+  position: relative;
 }
 .play-with-watch h4 {
   font-size: 28px;
@@ -746,7 +777,14 @@ header .navbar .navbar-brand img {
 /* client-review */
 
 .client-review {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
+  overflow: hidden;
+  position: relative;
 }
 .client-review h2 {
   font-size: 28px;
@@ -882,6 +920,15 @@ header .navbar .navbar-brand img {
 /* client-review */
 
 /* footer */
+footer{
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
+  overflow: hidden;
+  position: relative;
+}
 footer .navbar-brand {
   width: 100%;
   display: flex;
@@ -903,6 +950,15 @@ footer .navbar-brand img {
 }
 
 /* tiny footer */
+.tiny-footer{
+  background: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
+  overflow: hidden;
+  position: relative;
+}
 .tiny-footer P {
   font-size: 14px;
   font-weight: 400;
