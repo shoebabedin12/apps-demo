@@ -824,7 +824,7 @@ header .navbar .navbar-brand img {
   padding: 10px 3rem;
   /* background: #0d3848; */
   background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 .client-review a i {
   font-weight: 600;
@@ -1008,9 +1008,9 @@ footer .navbar-brand img {
   .client-review .swiper .swiper-wrapper .swiper-slide img {
     /* max-height: 550px; */
   }
-  .client-review .imageSlider {
+  /* .client-review .imageSlider {
     margin-bottom: 50px;
-  }
+  } */
 }
 @media screen and (max-width: 768px) {
   header .navbar .navbar-brand {
