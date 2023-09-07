@@ -1,5 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 /* common */
 * {
@@ -20,10 +20,13 @@ body {
   font-family: var(--fontFamily);
   background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
 }
-p, h2, h3, h4{
-max-width: 558px;
-text-align: center;
-margin: 10px auto;
+p,
+h2,
+h3,
+h4 {
+  max-width: 558px;
+  text-align: center;
+  margin: 10px auto;
 }
 .main {
   background: linear-gradient(
@@ -67,8 +70,6 @@ margin: 10px auto;
 
 /* preloader */
 
-
-
 /* variable csss */
 :root {
   --fontFamily: "Montserrat", sans-serif;
@@ -82,8 +83,8 @@ margin: 10px auto;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh; 
-   /* background: #000; */
+  min-height: 100vh;
+  /* background: #000; */
   /* background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%); */
   overflow: hidden;
   position: absolute;
@@ -214,7 +215,7 @@ header .navbar .container-fluid {
 }
 header .navbar.sticky .navbar-brand {
   /* background-color: #0f607d; */
-  background:linear-gradient(92.98deg, #146379 2.13%, #0d3848 97.63%);
+  background: linear-gradient(92.98deg, #146379 2.13%, #0d3848 97.63%);
 }
 header .navbar .navbar-brand {
   /* background-color: #064054; */
@@ -583,7 +584,6 @@ header .navbar .navbar-brand img {
   box-shadow: 0px 1px 13px 1px #15657b;
 }
 
-
 /* Style for the Font Awesome icon */
 .app-store-download .download-button i {
   margin-right: 10px;
@@ -644,7 +644,7 @@ header .navbar .navbar-brand img {
 .app-store-download .marquee-slider .marquee {
   /* width: 1260px; */
   height: 10rem;
-  width: 2560px;
+  width: 1660px;
   margin: auto;
   --duration: 60s;
   --gap: var(--space);
@@ -668,7 +668,7 @@ header .navbar .navbar-brand img {
 .app-store-download .marquee-slider .marquee__group .marquee_group_item {
   position: relative;
   max-width: 150px;
-    max-height: 160px;
+  max-height: 160px;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -700,12 +700,12 @@ header .navbar .navbar-brand img {
   .marquee__group
   .marquee_group_item
   .watch_div {
-    z-index: 1;
-    position: absolute;
-    top: 0.6rem;
-    left: 0.6rem;
-    width: calc(100% - 1.2rem);
-    height: calc(100% - 1rem);
+  z-index: 1;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  width: calc(100% - 1.2rem);
+  height: calc(100% - 1rem);
 }
 .app-store-download
   .marquee-slider
@@ -743,7 +743,7 @@ header .navbar .navbar-brand img {
   /* border: 1px solid #fff; */
   padding: 5px 10px;
   border-radius: 10px;
-  flex:0 0 auto;
+  flex: 0 0 auto;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -846,10 +846,9 @@ header .navbar .navbar-brand img {
 }
 .play-with-watch .overlay {
   margin: -1rem auto 0;
-    max-width: 320px;
+  max-width: 320px;
 }
-.play-with-watch .overlay img{
-  
+.play-with-watch .overlay img {
 }
 /* play with watch */
 
@@ -933,18 +932,18 @@ header .navbar .navbar-brand img {
 }
 .client-review .swiper .swiper-wrapper .swiper-slide p {
   font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    max-width: 100%;
-    text-align: left;
-    margin-left: 0;
+  font-weight: 400;
+  color: #fff;
+  max-width: 100%;
+  text-align: left;
+  margin-left: 0;
 }
 
 .client-review .swiper .swiper-wrapper .swiper-slide .img .marquee_group_item {
   position: relative;
   max-width: 280px;
-    max-height: 303px;
-    min-height: 303px;
+  max-height: 303px;
+  min-height: 303px;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -1077,7 +1076,6 @@ footer .navbar-brand img {
   .client-review .swiper .swiper-wrapper .swiper-slide .img {
     gap: 1rem;
   }
-
 }
 @media screen and (max-width: 768px) {
   header .navbar .navbar-brand {
@@ -1141,7 +1139,7 @@ footer .navbar-brand img {
     font-size: 19px;
   }
   .app-store-download ul li {
-    flex:  1 0 auto;
+    flex: 1 0 auto;
   }
   .app-store-download .download-button {
     font-size: 18px;
