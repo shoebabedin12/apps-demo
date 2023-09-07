@@ -215,7 +215,7 @@ header .navbar .container-fluid {
 }
 header .navbar.sticky .navbar-brand {
   /* background-color: #0f607d; */
-  /* background: linear-gradient(92.98deg, #146379 2.13%, #0d3848 97.63%); */
+  background: linear-gradient(92.98deg, #146379 2.13%, #0d3848 97.63%);
 }
 header .navbar .navbar-brand {
   /* background-color: #064054; */
@@ -846,8 +846,11 @@ header .navbar .navbar-brand img {
   padding-top: 10px;
 }
 .play-with-watch .overlay {
-  margin: -1rem auto 0;
+  margin: 0 auto;
   max-width: 320px;
+  z-index: 999;
+  position: relative;
+  top: -1rem;
 }
 .play-with-watch .overlay img {
 }
