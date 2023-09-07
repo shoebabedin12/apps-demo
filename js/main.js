@@ -17,10 +17,10 @@ $(document).ready(function () {
 
   // hero slider
   var swiper = new Swiper(".mySwiper", {
-    autoplay: {
-      delay: 300, 
-      disableOnInteraction: false, 
-    },
+    // autoplay: {
+    //   delay: 300, 
+    //   disableOnInteraction: false, 
+    // },
     loop: true, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
 
@@ -39,10 +39,10 @@ $(document).ready(function () {
 
 var galleryTop = new Swiper(".imageSlider", {
   spaceBetween: 10,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   speed: 1000,
   navigation: {
     nextEl: ".swiper-button-next",
