@@ -853,6 +853,8 @@ header .navbar .navbar-brand img {
   top: -1rem;
 }
 .play-with-watch .overlay img {
+  width: 100%;
+  object-fit: cover;
 }
 /* play with watch */
 
