@@ -18,7 +18,8 @@ li {
 }
 body {
   font-family: var(--fontFamily);
-  background: linear-gradient(92.98deg, #0d3848 2.13%, #2cbde6 97.63%);
+  background: var(--bs-body-bg);
+  background-color: #146379;
 }
 p,
 h2,
@@ -29,11 +30,7 @@ h4 {
   margin: 10px auto;
 }
 .main {
-  background: linear-gradient(
-    92.98deg,
-    rgba(9, 35, 45, 0.8) 2.13%,
-    rgba(17, 89, 109, 0.8) 97.63%
-  );
+  background: var(--bs-body-bg);
   position: relative;
 }
 .sticky {
@@ -74,6 +71,11 @@ h4 {
 :root {
   --fontFamily: "Montserrat", sans-serif;
   --color: #212529;
+  --bs-body-bg: linear-gradient(
+    92.98deg,
+    rgba(9, 35, 45, 0.8) 2.13%,
+    rgba(17, 89, 109, 0.8) 97.63%
+  );
 }
 /* variable csss */
 
@@ -1090,6 +1092,9 @@ footer .navbar-brand img {
   header .navbar .navbar-brand {
     width: calc(100% - 6%);
   }
+  .app-store-download {
+    padding-bottom: 1rem;
+  }
   .app-store-download p {
     text-align: center;
   }
@@ -1106,6 +1111,9 @@ footer .navbar-brand img {
     /* margin-bottom: 20px; */
   }
 
+  .app-store-download .marquee-slider {
+    margin-top: 1.5rem;
+  }
   .weekly-update ul li {
     flex: 0 0 auto;
   }
@@ -1136,11 +1144,15 @@ footer .navbar-brand img {
     max-height: 40px;
   }
   .hero h2 {
-    font-size: 19px;
+    font-size: 16px;
+    margin-bottom: 30px;
   }
   .hero a {
     font-size: 18px;
     padding: 10px 1rem;
+  }
+  .hero .swiper .swiper-slide {
+    margin-bottom: 20px;
   }
   .app-store-download p {
     font-size: 15px;
@@ -1150,7 +1162,7 @@ footer .navbar-brand img {
   }
 
   .app-store-download .download-button {
-    font-size: 18px;
+    font-size: 16px;
   }
   .app-store-download img {
     /* object-fit: fill; */

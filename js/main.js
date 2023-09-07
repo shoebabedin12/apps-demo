@@ -17,10 +17,10 @@ $(document).ready(function () {
 
   // hero slider
   var swiper = new Swiper(".mySwiper", {
-    // autoplay: {
-    //   delay: 300, 
-    //   disableOnInteraction: false, 
-    // },
+    autoplay: {
+      delay: 300, 
+      disableOnInteraction: false, 
+    },
     loop: true, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
 
