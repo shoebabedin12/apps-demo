@@ -215,7 +215,7 @@ header .navbar .container-fluid {
 }
 header .navbar.sticky .navbar-brand {
   /* background-color: #0f607d; */
-  background: linear-gradient(92.98deg, #146379 2.13%, #0d3848 97.63%);
+  /* background: linear-gradient(92.98deg, #146379 2.13%, #0d3848 97.63%); */
 }
 header .navbar .navbar-brand {
   /* background-color: #064054; */
@@ -556,7 +556,7 @@ header .navbar .navbar-brand img {
   text-align: center;
 }
 .app-store-download h2 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 700;
   color: #fff;
   max-width: 600px;
