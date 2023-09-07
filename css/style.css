@@ -369,7 +369,7 @@ header .navbar .navbar-brand img {
   left: 50%;
   max-height: 311px;
   width: calc(100% - 3.2rem);
-  height: calc(100% - 9rem);
+  height: calc(100% - 8rem);
   transform: translate(-50%, -50%);
 }
 .hero .swiper .swiper-slide .swiper_slider_item .watch_div .watch_wallpaper {
@@ -918,6 +918,8 @@ header .navbar .navbar-brand img {
   font-weight: 700;
   color: #fff;
   margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .client-review .swiper .swiper-wrapper .swiper-slide .title ul {
   display: flex;
@@ -925,6 +927,7 @@ header .navbar .navbar-brand img {
   justify-content: center;
   gap: 8px;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .client-review .swiper .swiper-wrapper .swiper-slide .title ul li i {
@@ -1111,6 +1114,7 @@ footer .navbar-brand img {
   }
   .client-review .swiper .swiper-wrapper .swiper-slide .title {
     width: 100%;
+    align-items: flex-start;
   }
   .client-review .imageSlider {
     margin-bottom: 0px;
@@ -1138,9 +1142,7 @@ footer .navbar-brand img {
   .app-store-download h2 {
     font-size: 19px;
   }
-  .app-store-download ul li {
-    flex: 1 0 auto;
-  }
+
   .app-store-download .download-button {
     font-size: 18px;
   }
@@ -1157,9 +1159,7 @@ footer .navbar-brand img {
   .weekly-update ul {
     padding: 20px 15px;
   }
-  .weekly-update ul li {
-    flex: 1 0 auto;
-  }
+
   .play-with-watch video {
     margin-bottom: 30px;
   }
@@ -1179,6 +1179,7 @@ footer .navbar-brand img {
 
   .client-review .swiper .swiper-wrapper .swiper-slide .title h4 {
     font-size: 18px;
+    text-align: left;
   }
   .client-review .swiper .swiper-wrapper .swiper-slide .title ul li i {
     font-size: 12px;
