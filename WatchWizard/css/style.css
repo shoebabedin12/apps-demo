@@ -1143,6 +1143,9 @@ footer .navbar-brand img {
     max-width: 40px;
     max-height: 40px;
   }
+  .hero{
+    padding-top: 0px;
+  }
   .hero h2 {
     font-size: 16px;
     margin-bottom: 30px;
@@ -1153,6 +1156,20 @@ footer .navbar-brand img {
   }
   .hero .swiper .swiper-slide {
     margin-bottom: 20px;
+  }
+  .hero .swiper .swiper-slide .swiper_slider_item{
+    max-width: 185px;
+    max-height: 274px;
+    min-height: 274px;
+  }
+  .hero .swiper .swiper-slide .swiper_slider_item .watch_div{
+    max-height: 176px;
+    max-width: 147px;
+    width: calc(100% - 0rem);
+    height: calc(100% - 0rem);
+  }
+  .hero .swiper .swiper-slide .swiper_slider_item .watch_div .watch_wallpaper{
+    border-radius: 30px;
   }
   .app-store-download p {
     font-size: 15px;
